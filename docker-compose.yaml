@@ -1,0 +1,25 @@
+version: "3.7"
+services:
+  fwncs-contrib-dev:
+    build: .devcontainer
+    tty: true
+    volumes:
+      - ./:/src/:delegated
+      - ~/.ssh:/root/.ssh
+      - ~/.gitconfig:/root/.gitconfig
+    networks:
+      - go-fwncs-net
+    container_name: fwncs-contrib-dev
+  jaeger:
+    image: jaegertracing/all-in-one
+    ports:
+      - 16686:16686
+    container_name: jaeger
+    networks:
+      - go-fwncs-net
+networks:
+  default:
+    name: bridge
+  go-fwncs-net:
+    name: go-fwncs-net
+    driver: bridge
