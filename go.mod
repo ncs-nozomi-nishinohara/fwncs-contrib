@@ -8,7 +8,7 @@ require (
 	github.com/n-creativesystem/go-fwncs v0.0.5
 	github.com/newrelic/go-agent/v3 v3.13.0
 	github.com/opentracing/opentracing-go v1.2.0
-	github.com/prometheus/client_golang v1.11.0
+	github.com/prometheus/client_golang v1.11.1
 	github.com/uber/jaeger-client-go v2.29.1+incompatible
 	github.com/uber/jaeger-lib v2.4.1+incompatible // indirect
 	go.elastic.co/apm v1.12.0
