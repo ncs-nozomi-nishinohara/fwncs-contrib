@@ -14,8 +14,7 @@ require (
 	go.elastic.co/apm v1.12.0
 	go.elastic.co/apm/module/apmhttp v1.12.0
 	go.uber.org/atomic v1.8.0 // indirect
-	golang.org/x/crypto v0.0.0-20210616213533-5ff15b29337e // indirect
-	golang.org/x/net v0.0.0-20210614182718-04defd469f4e // indirect
+	golang.org/x/crypto v0.1.0 // indirect
 	golang.org/x/oauth2 v0.0.0-20210615190721-d04028783cf1 // indirect
 	google.golang.org/appengine v1.6.7 // indirect
 )
